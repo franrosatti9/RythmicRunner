@@ -844,6 +844,10 @@ MonoBehaviour:
     beatPlayed: 8
     height: 0
     length: 0
+  - type: 1
+    beatPlayed: 9
+    height: 2
+    length: 0
   - type: 0
     beatPlayed: 32
     height: 0
@@ -1037,7 +1041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98eeea20a784c1b4ca8cadec59457f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 9
+  speed: 7
   jumpForce: 12
   coyoteTime: 0.2
   jumpBufferTime: 0.1
@@ -1079,7 +1083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelParent: {fileID: 154962264}
-  dashObstacle: {fileID: 0}
+  dashObstacle: {fileID: 2043089716747358226, guid: e248e133104c9f444aa06c86d9205083, type: 3}
   jumpObstacle: {fileID: 2663360513009291660, guid: 29d30acd190fe684595982413c9c4320, type: 3}
   slideObstacle: {fileID: 2043089716747358226, guid: be57fb8431de8564fa1dd7f3d4f77c15, type: 3}
   damageableObstacle: {fileID: 8828508532268911985, guid: f3a405598f2ab3f4fa612ee5a9f55e16, type: 3}

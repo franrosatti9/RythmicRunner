@@ -35,22 +35,20 @@ public class LevelGenerator : MonoBehaviour
     public void CreateObstacle(InputType input, float beat, float height, float length)
     {
         Vector3 pos = Vector3.zero;
+        pos.x = GetDistanceByBeat(beat) + obstacleOffset;
         switch (input)
         {
             case InputType.Jump:
-                pos.x = GetDistanceByBeat(beat) + obstacleOffset;
                 Instantiate(jumpObstacle, pos, Quaternion.identity, levelParent.transform);
                 break;
             case InputType.Dash:
-                pos.x = GetDistanceByBeat(beat);
-                //Instantiate(dashObstacle, pos, Quaternion.identity);
+                pos.y = height;
+                Instantiate(dashObstacle, pos, Quaternion.identity, levelParent.transform);
                 break;
             case InputType.Slide:
-                pos.x = GetDistanceByBeat(beat);
                 Instantiate(slideObstacle, pos, Quaternion.identity, levelParent.transform);
                 break;
             case InputType.Attack:
-                pos.x = GetDistanceByBeat(beat) + obstacleOffset;
                 pos.y = height;
                 Instantiate(damageableObstacle, pos, Quaternion.identity, levelParent.transform);
                 break;
